@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex"
+path="res://.import/roads.png-2aa912bc3eb36d1bbbf7d569f806c8d3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/icon.png"
-dest_files=[ "res://.import/icon.png-b6a7fb2db36edd3d95dc42f1dc8c1c5d.stex" ]
+source_file="res://assets/WorldTiles/roads.png"
+dest_files=[ "res://.import/roads.png-2aa912bc3eb36d1bbbf7d569f806c8d3.stex" ]
 
 [params]
 

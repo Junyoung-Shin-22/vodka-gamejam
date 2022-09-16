@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wood.png-edff8c2493a3b740984a0fbc323bf282.stex"
+path="res://.import/wood.png-76ed86f8e874c3adf2e0c260e2dae5c2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/wood.png"
-dest_files=[ "res://.import/wood.png-edff8c2493a3b740984a0fbc323bf282.stex" ]
+source_file="res://assets/WorldTiles/wood.png"
+dest_files=[ "res://.import/wood.png-76ed86f8e874c3adf2e0c260e2dae5c2.stex" ]
 
 [params]
 
