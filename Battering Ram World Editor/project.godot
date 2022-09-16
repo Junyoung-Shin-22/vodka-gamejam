@@ -10,13 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Battering Ram"
-run/main_scene="res://scenes/Root.tscn"
+config/name="/Users/jun02/OneDrive - dgist.ac.kr/Projects/vodka-gamejam"
 config/icon="res://assets/icon.png"
-
-[display]
-
-window/size/height=768
 
 [physics]
 

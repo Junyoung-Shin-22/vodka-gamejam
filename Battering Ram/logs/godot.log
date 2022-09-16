@@ -1,0 +1,9 @@
+Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
+OpenGL ES 3.0 Renderer: Intel(R) UHD Graphics
+OpenGL ES Batching: ON
+ 
+Project is missing: C:/Users/jun02/OneDrive - dgist.ac.kr/Projects/vodka-gamejam/Battering Ram/project.godot
+ERROR: Condition "default_certs != nullptr" is true.
+   at: load_default_certificates (modules/mbedtls/crypto_mbedtls.cpp:314) - Condition "default_certs != nullptr" is true.
+Removed 1 projects from the list, remaining 2 projects
+Editing project: C:/Users/jun02/OneDrive - dgist.ac.kr/Projects/vodka-gamejam/Battering Ram (C:::Users::jun02::OneDrive - dgist.ac.kr::Projects::vodka-gamejam::Battering Ram)
