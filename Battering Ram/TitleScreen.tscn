@@ -32,7 +32,11 @@ script = ExtResource( 16 )
 position = Vector2( 512, 384 )
 scale = Vector2( 1.3, 1.7 )
 frames = SubResource( 1 )
+<<<<<<< HEAD
 frame = 7
+=======
+frame = 8
+>>>>>>> 7c3836bee8c8692d2dfcf93339531a9588ed9781
 playing = true
 
 [node name="Logo" type="Sprite" parent="."]
