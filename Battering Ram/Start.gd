@@ -1,5 +1,6 @@
 extends Sprite
 
+signal pressed
 
 var scale_delta = Vector2(0.001, 0.001)
 var scale_direction = 1
@@ -41,6 +42,5 @@ func _input(event):
 			# print([x, y])
 			
 			if (left < x && x < right) && (top < y && y < bottom):
-				print('clicked')
-			else:
-				print('not clicked')
+				#print('clicked')
+				emit_signal('pressed')
