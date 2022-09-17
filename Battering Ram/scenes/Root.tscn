@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://assets/bgm/title.mp3" type="AudioStream" id=1]
 [ext_resource path="res://scenes/TitleScreen.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/Root.gd" type="Script" id=3]
 
@@ -7,5 +8,8 @@
 script = ExtResource( 3 )
 
 [node name="TitleScreen" parent="." instance=ExtResource( 2 )]
+
+[node name="BGM" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
 
 [connection signal="start_pressed" from="TitleScreen" to="." method="_on_TitleScreen_start_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/crafting.mp3-1a0d35262c03d3de77899e70677b999b.mp3str"
+
+[deps]
+
+source_file="res://assets/bgm/crafting.mp3"
+dest_files=[ "res://.import/crafting.mp3-1a0d35262c03d3de77899e70677b999b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
