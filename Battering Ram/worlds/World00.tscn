@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://worlds/World.gd" type="Script" id=6]
+[ext_resource path="res://assets/WorldTiles/roads_02.png" type="Texture" id=7]
+[ext_resource path="res://assets/WorldTiles/grass.png" type="Texture" id=8]
+[ext_resource path="res://assets/WorldTiles/grasses.png" type="Texture" id=10]
+
+[sub_resource type="TileSet" id=2]
+0/name = "unknown3.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 96, 64 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 0
+0/autotile/bitmask_flags = [  ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 32, 32 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "unknown3.png 1"
+1/texture = ExtResource( 7 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 96, 64 )
+1/tile_mode = 1
+1/autotile/bitmask_mode = 1
+1/autotile/bitmask_flags = [ Vector2( 0, 0 ), 144, Vector2( 0, 1 ), 146, Vector2( 0, 2 ), 18, Vector2( 0, 3 ), 16, Vector2( 1, 0 ), 432, Vector2( 1, 1 ), 438, Vector2( 1, 2 ), 54, Vector2( 1, 3 ), 48, Vector2( 2, 0 ), 504, Vector2( 2, 1 ), 511, Vector2( 2, 2 ), 63, Vector2( 2, 3 ), 56, Vector2( 3, 0 ), 216, Vector2( 3, 1 ), 219, Vector2( 3, 2 ), 27, Vector2( 3, 3 ), 24, Vector2( 4, 0 ), 255, Vector2( 4, 1 ), 507, Vector2( 4, 2 ), 254, Vector2( 5, 0 ), 447, Vector2( 5, 1 ), 510, Vector2( 5, 2 ), 443 ]
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 16, 16 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "unknown2.png 2"
+2/texture = ExtResource( 10 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 16, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "unknown.png 3"
+3/texture = ExtResource( 8 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 16, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+
+[node name="World3" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="TileMap1" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 3, 0, 1, 3, 0, 2, 3, 0, 3, 3, 0, 4, 2, 0, 5, 3, 0, 6, 3, 0, 7, 3, 0, 8, 3, 0, 9, 3, 0, 10, 3, 0, 11, 3, 0, 12, 1, 1, 13, 1, 3, 65536, 3, 0, 65537, 2, 0, 65538, 3, 0, 65539, 3, 0, 65540, 3, 0, 65541, 3, 0, 65542, 2, 0, 65543, 2, 0, 65544, 3, 0, 65545, 3, 0, 65546, 3, 0, 65547, 2, 0, 65548, 1, 65537, 65549, 1, 65539, 131072, 3, 0, 131073, 3, 0, 131074, 2, 0, 131075, 3, 0, 131076, 3, 0, 131077, 3, 0, 131078, 3, 0, 131079, 3, 0, 131080, 3, 0, 131081, 3, 0, 131082, 3, 0, 131083, 3, 0, 131084, 1, 65537, 131085, 1, 65539, 196608, 2, 0, 196609, 3, 0, 196610, 3, 0, 196611, 3, 0, 196612, 3, 0, 196613, 3, 0, 196614, 2, 0, 196615, 3, 0, 196616, 3, 0, 196617, 3, 0, 196618, 2, 0, 196619, 3, 0, 196620, 1, 65537, 196621, 1, 65539, 262144, 3, 0, 262145, 3, 0, 262146, 2, 0, 262147, 3, 0, 262148, 3, 0, 262149, 2, 0, 262150, 2, 0, 262151, 3, 0, 262152, 3, 0, 262153, 3, 0, 262154, 3, 0, 262155, 3, 0, 262156, 1, 65537, 262157, 1, 65539, 327680, 3, 0, 327681, 3, 0, 327682, 3, 0, 327683, 3, 0, 327684, 3, 0, 327685, 2, 0, 327686, 3, 0, 327687, 3, 0, 327688, 3, 0, 327689, 3, 0, 327690, 2, 0, 327691, 3, 0, 327692, 1, 65537, 327693, 1, 65539, 393216, 1, 1, 393217, 1, 2, 393218, 1, 2, 393219, 1, 2, 393220, 1, 2, 393221, 1, 2, 393222, 1, 2, 393223, 1, 2, 393224, 1, 2, 393225, 1, 2, 393226, 1, 2, 393227, 1, 2, 393228, 1, 65541, 393229, 1, 65539, 458752, 1, 65537, 458753, 1, 4, 458754, 1, 131074, 458755, 1, 131074, 458756, 1, 131074, 458757, 1, 131074, 458758, 1, 131074, 458759, 1, 131074, 458760, 1, 131074, 458761, 1, 131074, 458762, 1, 131074, 458763, 1, 131074, 458764, 1, 131074, 458765, 1, 131075, 524288, 1, 65537, 524289, 1, 65539, 524290, 3, 0, 524291, 3, 0, 524292, 3, 0, 524293, 3, 0, 524294, 3, 0, 524295, 3, 0, 524296, 2, 0, 524297, 3, 0, 524298, 3, 0, 524299, 3, 0, 524300, 3, 0, 524301, 3, 0, 589824, 1, 65537, 589825, 1, 65539, 589826, 3, 0, 589827, 3, 0, 589828, 2, 0, 589829, 3, 0, 589830, 3, 0, 589831, 3, 0, 589832, 3, 0, 589833, 3, 0, 589834, 3, 0, 589835, 3, 0, 589836, 2, 0, 589837, 3, 0, 655360, 1, 65537, 655361, 1, 65539, 655362, 3, 0, 655363, 2, 0, 655364, 3, 0, 655365, 2, 0, 655366, 3, 0, 655367, 3, 0, 655368, 3, 0, 655369, 2, 0, 655370, 2, 0, 655371, 2, 0, 655372, 3, 0, 655373, 2, 0, 720896, 1, 65537, 720897, 1, 65539, 720898, 2, 0, 720899, 3, 0, 720900, 3, 0, 720901, 3, 0, 720902, 3, 0, 720903, 3, 0, 720904, 2, 0, 720905, 3, 0, 720906, 3, 0, 720907, 3, 0, 720908, 2, 0, 720909, 3, 0, 786432, 1, 65537, 786433, 1, 65539, 786434, 3, 0, 786435, 3, 0, 786436, 3, 0, 786437, 3, 0, 786438, 3, 0, 786439, 3, 0, 786440, 3, 0, 786441, 3, 0, 786442, 3, 0, 786443, 3, 0, 786444, 2, 0, 786445, 3, 0, 851968, 1, 131073, 851969, 1, 131075, 851970, 3, 0, 851971, 3, 0, 851972, 2, 0, 851973, 2, 0, 851974, 3, 0, 851975, 2, 0, 851976, 2, 0, 851977, 3, 0, 851978, 3, 0, 851979, 3, 0, 851980, 3, 0, 851981, 3, 0 )

@@ -3,6 +3,8 @@ extends Sprite
 signal pressed
 
 var status
+var price
+
 var left
 var right
 var top
@@ -24,15 +26,16 @@ func update():
 	
 	if status == 'locked':
 		$Locked.visible = true
-	elif status == 'unlocked':
-		$Unlocked.visible = true
 	elif status == 'soldOut':
 		$SoldOut.visible = true
+	elif status == 'unlocked':
+		$Unlocked.visible = true
+		$Unlocked/PriceTag.text = '%d'%price
 
 func _input(event):
 	if event is InputEventMouseButton && event.is_pressed():
 		if event.button_index == 1:
-			if status != 'unlocked':
+			if status == 'locked' or status == 'soldOut':
 				return
 			
 			var pos = event.position

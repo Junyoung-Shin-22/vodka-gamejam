@@ -1,20 +1,40 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/ConstructScreen/sold_out.png" type="Texture" id=1]
 [ext_resource path="res://assets/ConstructScreen/unlocked.png" type="Texture" id=2]
 [ext_resource path="res://assets/ConstructScreen/locked.png" type="Texture" id=3]
 [ext_resource path="res://scripts/ConstructScreen/Frame.gd" type="Script" id=4]
+[ext_resource path="res://assets/ConstructScreen/Coin.png" type="Texture" id=5]
+[ext_resource path="res://assets/fonts/myfont.tres" type="DynamicFont" id=6]
 
 [node name="Frame" type="Sprite"]
 script = ExtResource( 4 )
 
 [node name="Unlocked" type="Sprite" parent="."]
+position = Vector2( 146.3, -146 )
+scale = Vector2( 0.792, 0.792 )
 texture = ExtResource( 2 )
 
+[node name="Coin" type="Sprite" parent="Unlocked"]
+position = Vector2( 58.9641, -92.1724 )
+scale = Vector2( 0.175, 0.175 )
+texture = ExtResource( 5 )
+
+[node name="PriceTag" type="Label" parent="Unlocked"]
+margin_left = 162.5
+margin_top = -156.566
+margin_right = 246.5
+margin_bottom = -105.566
+rect_scale = Vector2( 3, 3 )
+custom_fonts/font = ExtResource( 6 )
+text = "123"
+
 [node name="Locked" type="Sprite" parent="."]
+visible = false
 texture = ExtResource( 3 )
 
 [node name="SoldOut" type="Sprite" parent="."]
+visible = false
 position = Vector2( 144, -143 )
 scale = Vector2( 1.559, 1.559 )
 texture = ExtResource( 1 )

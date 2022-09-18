@@ -7,9 +7,11 @@
 [node name="Root" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="TitleScreen" parent="." instance=ExtResource( 2 )]
+[node name="ParentScreen" type="Node2D" parent="."]
+
+[node name="TitleScreen" parent="ParentScreen" instance=ExtResource( 2 )]
 
 [node name="BGM" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 1 )
 
-[connection signal="start_pressed" from="TitleScreen" to="." method="_on_TitleScreen_start_pressed"]
+[connection signal="start_pressed" from="ParentScreen/TitleScreen" to="." method="_on_TitleScreen_start_pressed"]
